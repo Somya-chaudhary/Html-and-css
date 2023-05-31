@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+<style>
+body{
+    background-color: lightblue;
+    font-size: 18px;
+}
+form{
+    background-color: bisque;
+    padding: 50px;
+    margin: 10px 50px;
+    width: 500px;
+   
+}
+/* input{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    float: right;
+    
+    
+} */
+.button{
+    background-color: rgba(0, 128, 0, 0);
+    height: 40px;
+    color: grey;
+    text-transform: uppercase;
+    font-size: large;
+    border: 2px solid black;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+    
+    <form>
+        <h1>Colllege Admission Form</h1>
+        <p>If you'd like to apply our college,please fill in this College Admission Form and we will  contact you as soon as possible</p>
+        
+
+<label for="Name"> Name :</label>
+<input type="text" placeholder="First name" id="firstname">
+
+<input type="text" placeholder="Last name" id="lastname">
+
+
+<br><br>
+
+<label for="mail">Email:</label>
+<input type="email" placeholder="Enter your email id" id="mail">
+<br><br>
+<label for="DOB"> D.O.B:</label>
+<input id="DOB"  type="date"> <br> <br>
+<label for="Contact no.">Contact no.:</label>
+<input id="Contact"  type="number">
+
+
+
+<br><br>
+<label for="Documents">Please upload your documents:</label>
+<input type="file" id="resume" multiple>
+<br><br>
+
+<p>Please Select your Gender:</p>
+<input type="radio" id="male" name="gender">
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" >
+<label for="female">Female</label>
+
+
+<p>Pleae select the course you would like to attend </p>
+
+<select>
+    <option selected>Choose here</option>
+    <option>Btech</option>
+    <option>Bsc</option>
+    <option>Bcom</option>
+    <option>Bba</option>
+</select>
+<br><br>
+<p>Home Address:</p>
+
+<textarea id=" street Address" placeholder="Street Address" rows="2" cols="20"></textarea> <br>
+<select>
+    <option selected>choose city</option>
+    <option>Bhopal</option>
+    <option>Gwalior</option>
+    <option>Jaipur</option>
+    <option>Indore</option>
+
+
+
+
+
+</select>
+
+
+
+<select>
+    <option selected>choose state</option>
+    <option>Madhya pradesh</option>
+    <option>Rajasthan</option>
+    <option>Uttar pradesh</option>
+    <option>Himachal pradesh</option>
+    <option>Gujarat</option>
+
+
+</select>
+
+<select>
+    <option>Choose Country</option>
+    <option>India</option>
+    <option>UK</option>
+    <option>Australia</option>
+    <option>Germany</option> 
+</select>
+<br><br>
+
+<input type="reset" class="button" value="Reset">
+
+
+ <input type="submit" value="Submit" class="button"> 
+    </form>
+</body>
+</html>
